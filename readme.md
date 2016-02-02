@@ -1,16 +1,13 @@
 # Advanced Computer Science Syllabus
 
 
-Welcome to a new year of Computer Science. This class is based on the Introduction to Computer Science at the University of Berkeley, and is designed to prepare you to take college-level computer science, and expand your opportunities to explore fields in science, technology, engineering, and beyond. This year, we are partnering with TEALS (Technology Education and Literacy in Schools), which will bring engineers and technology professionals into the classroom to give you a rigorous and real-world experience.
+Welcome to a new year of Computer Science. This class is based on the Introduction to Computer Science at the University of Berkeley, and is designed to prepare you to take college-level computer science, and expand your opportunities to explore fields in science, technology, engineering, and beyond. This year, we are partnering with TEALS (Technology Education and Literacy in Schools), which will bring engineers into the classroom as instructors, to give you a rigorous and real-world experience.
 
-
-## Instructors
-
-|  |  |  |
-|---|---|---|
-| Mr. S-K |[bsk@ms223.org](mailto:bsk@ms223.org)  |  347-628-2750|
-|	Mr. Fernandez  |	afernandez@ms223.org   ||
-|Mr. Bhattacharyya <small>(“Mr. B”)</small>|ab@ms223.org | | |
+| Instructor | Email |
+|---|---|
+| Mr. S-K |[bsk@ms223.org](mailto:bsk@ms223.org)  |
+|	Mr. Fernandez  |	[afernandez@ms223.org](mailto:afernandez@ms223.org)   |
+|Mr. Bhattacharyya <small>(“Mr. B”)</small>|[ab@ms223.org](mailto:ab@ms223.org) |
 
 ## Attendance
 This class meets first period, Monday, Tuesday, and Friday. In order to keep up with concepts, content, and skills, students are expected to attend every class and be on time.
