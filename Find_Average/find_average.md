@@ -6,4 +6,10 @@ math = input("What's your grade in math?")
 # What happens if you try this?
 ```
 - [ ] How many inputs do you need?
-- [ ] What kind of data do you get back from an input? (Try `type(input("What's your grade in math?"))`)
+- [ ] What kind of data do you get back from an input?
+
+_Try this to find out a type of data:_
+
+```python
+  print type(input("What's your grade in math?"))
+```)
