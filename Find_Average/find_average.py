@@ -1,9 +1,9 @@
 # We need to create a variable for each class...
 math = float(input("What is your grade in Math?"))
-ela = float(input("What is your grade in ELA?"))
-softwareEngineering = float(input("What is your grade in Software Engineering?"))
+english = float(input("What is your grade in English?"))
+cs = float(input("What is your grade in Computer Science?"))
 science = float(input("What is your grade in Science?"))
 socialStudies = float(input("What is your grade in Social Studies?"))
-average = (math + ela + softwareEngineering + science + socialStudies)/5
+average = (math + english + cs + science + socialStudies)/5
 
 print "Your average is " +  str(average)
