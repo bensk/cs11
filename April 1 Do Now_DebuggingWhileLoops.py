@@ -1,17 +1,18 @@
 # For each example below, predict what will be printed. Then, run the code and confirm your prediction.
 
-a = 0
-while a< 100:
-	print a
+# a = 0
+# while a < 100:
+# 	print a
 """
-Prediction:
-Observation:
+Prediction: it will print a (or 0)
+Observation: infinite loop
  """
 
-a = 0
-while a < 100:
-	a = a + 1
-	print a
+# a = 0
+# while a < 100:
+#
+# 	a = a + 1
+
 """
 Prediction:
 Observation:
@@ -22,5 +23,5 @@ while a != "y":
 	a = raw_input("Would you like to quit: ")
 """
 Prediction:
-Observation:
+Observation: won't quit until answer == y
  """
