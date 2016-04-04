@@ -1,4 +1,3 @@
-# Adapted from http://learnpythonthehardway.org/book/ex33.html
 i = 0
 numbers = []
 
