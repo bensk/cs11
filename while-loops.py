@@ -1,3 +1,4 @@
+# Adapted from http://learnpythonthehardway.org/book/ex33.html
 i = 0
 numbers = []
 
@@ -14,3 +15,4 @@ print "The list of numbers is: "
 
 for num in numbers:
     print num
+
