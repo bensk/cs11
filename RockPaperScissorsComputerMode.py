@@ -36,9 +36,9 @@ print "Computer 1 scores " + str(score) + " out of " + str(turns)
 print "Computer 2 scores " + str(score2) + " out of " + str(turns)
 print "They tied " + str(turns - score - score2) + " times"
 if score>score2:
-    print "Computer 1 wins!"
+    print "Computer 1 wins by " + str(score-score2) + "!"
 else:
-    print "Computer 2 wins!"
+    print "Computer 2 wins by " + str(score2-score) + "!"
 # print "Your score is " + str(score2) + " out of " + str(turns)
 
 
