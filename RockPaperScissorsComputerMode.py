@@ -1,6 +1,4 @@
-"""
-We made the computer play itself!
-"""
+# We made the computer play itself!
 
 score2 = 0
 score=0
@@ -40,6 +38,3 @@ if score>score2:
 else:
     print "Computer 2 wins by " + str(score2-score) + "!"
 # print "Your score is " + str(score2) + " out of " + str(turns)
-
-
-

@@ -1,6 +1,5 @@
-"""
-Play Rock || Paper || Scissors
-"""
+# Play Rock || Paper || Scissors
+
 
 score = 0
 turns = input('best of...?')
@@ -28,6 +27,3 @@ for n in range(1,turns):
         user_gesture = raw_input("What's your move- rock, paper or scissors?")
 
 print "Your score is " + str(score) + " out of " + str(turns)
-
-
-
