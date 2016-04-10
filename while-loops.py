@@ -14,4 +14,3 @@ print "The list of numbers is: "
 
 for num in numbers:
     print num
-

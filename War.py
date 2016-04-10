@@ -53,7 +53,7 @@ def play():
         if winner is player2:
             p2_score += 1
 
-    # the deck is now empty again
+# the deck is now empty again
 
     print '------'
     print player1, ': score of ', p1_score
