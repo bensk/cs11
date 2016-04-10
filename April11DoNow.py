@@ -1,3 +1,7 @@
+"""
+Open up the terminal. Paste the following code into the editor:
+"""
+
 import random
 # inputs:  x (integer), y (integer)
 # outputs: int
@@ -10,3 +14,8 @@ def mystery_function(x, y):
         z = x * y
     return z
 mystery_function(1, 2)
+
+"""
+What happens when your run this code? How do you know what the result was?
+Keeping the function the same, rewrite the code to print out the value that the function returns.
+"""
