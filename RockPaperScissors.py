@@ -1,6 +1,5 @@
 # Play Rock || Paper || Scissors
 
-
 score = 0
 turns = input('best of...?')
 moves = ['rock','paper','scissors']
