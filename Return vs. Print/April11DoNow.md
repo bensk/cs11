@@ -14,6 +14,8 @@ def mystery_function(x, y):
     return z
 mystery_function(1, 2)
 ```
+
 **In comments:**
+
 1. What happens when your run this code? How do you know what the result was?
 2. Keeping the function the same, rewrite the code to print out the value that the function returns.
