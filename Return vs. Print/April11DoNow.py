@@ -1,5 +1,5 @@
 """
-Open up the terminal. Paste the following code into the editor:
+Open up PyCharm. Paste the following code into the editor:
 """
 
 import random
