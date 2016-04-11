@@ -59,7 +59,7 @@ print "printing print_only ..."
 print print_only(7)
 
 print "printing return_only ..."
-return_only(7)
+print return_only(7)
 
 print "using print_only ..."
 print_only(7) + 6
