@@ -21,6 +21,8 @@ mystery_function(1, 2)
 1. What happens when your run this code? How do you know what the result was?
 2. Keeping the function the same, rewrite the code to print out the value that the function returns.
 
+-[ ] <kbd>Upload your code to GitHub in a file called April11_DoNow.py</kbd>
+
 ---
 
 ## 📖 Reading
