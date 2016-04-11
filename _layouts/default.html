@@ -20,9 +20,9 @@
       <!-- Added index, maybe -->
       <ul>
         {% for post in site.posts %}
-          <p class="small"><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-            <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-        </p>
+          <li>
+            <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.date | date_to_string }}<br>{{ post.title }}</a>
+          </li>
         {% endfor %}
       </ul>
   </div>
