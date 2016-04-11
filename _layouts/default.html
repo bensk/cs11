@@ -18,13 +18,13 @@
       </style>
       <div id="nav">
       <!-- Added index, maybe -->
-      <ul>
+
         {% for post in site.posts %}
-          <li>
-            <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.date | date_to_string }}<br>{{ post.title }}</a>
-          </li>
+          <p class="lead">{{ post.date | date_to_string }}</p>
+            <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+          
         {% endfor %}
-      </ul>
+    </p>
   </div>
       <!-- End index -->
     <div class="container content">
