@@ -79,10 +79,23 @@ print h(2)
 ```
 **What will the following code output?**
 
-<iframe src="https://docs.google.com/a/ms223.org/forms/d/1QsTK_Tlw1hIwoJenxGX5beEThv90lWFecT1_fJm_1s8/viewform?embedded=true#start=embed" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+```python
+def square(x):
+    return x*x
+
+def g(y):
+    return y + 3
+
+def h(y):
+    return square(y) + 3
+
+print g(h(2))
+```
 
 - [ ] a) 2
 - [ ] b) 5
 - [ ] c) 7
 - [ ] d) 25
 - [ ] e) Error: y has a value but x is an unbound variable insidethe square function
+
+Answer on [this Google form](https://docs.google.com/a/ms223.org/forms/d/1QsTK_Tlw1hIwoJenxGX5beEThv90lWFecT1_fJm_1s8/viewform#start=embed).
