@@ -1,121 +1,85 @@
-# Poole
-
-*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
-
------
-
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
-
-![Poole](https://f.cloud.github.com/assets/98681/1834359/71ae4048-73db-11e3-9a3c-df38eb170537.png)
-
-See Poole in action with [the demo site](http://demo.getpoole.com).
-
-There are currently two official themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Individual theme feedback and bug reports should be submitted to the theme's individual repository.
+# Advanced Computer Science Syllabus
 
 
-## Contents
+Welcome to a new year of Computer Science. This class is based on the Introduction to Computer Science at the University of Berkeley, and is designed to prepare you to take college-level computer science, and expand your opportunities to explore fields in science, technology, engineering, and beyond. This year, we are partnering with TEALS (Technology Education and Literacy in Schools), which will bring engineers into the classroom as instructors, to give you a rigorous and real-world experience.
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Rems, `font-size`, and scaling](#rems-font-size-and-scaling)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+| Instructor | Email |
+|---|---|
+| Mr. S-K |[bsk@ms223.org](mailto:bsk@ms223.org)  |
+|	Mr. Fernandez  |	[afernandez@ms223.org](mailto:afernandez@ms223.org)   |
+|Mr. Bhattacharyya <small>(“Mr. B”)</small>|[ab@ms223.org](mailto:ab@ms223.org) |
 
+## Attendance
+This class meets first period, Monday, Tuesday, and Friday. In order to keep up with concepts, content, and skills, students are expected to attend every class and be on time.
+All lessons and materials are available online anytime at [bsk.education](http://bsk.education). It is your responsibility to complete any missing work. I work hard to make sure that is possible.
 
-## Usage
-
-### 1. Install dependencies
-
-Poole is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem:
-
-```bash
-$ gem install jekyll
-```
-
-**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
-
-**Need syntax highlighting?** Poole includes support for Pygments or Rouge, so install your gem of choice to make use of the built-in styling. Read more about this [in the Jekyll docs](http://jekyllrb.com/docs/templates/#code_snippet_highlighting).
-
-### 2a. Quick start
-
-To help anyone with any level of familiarity with Jekyll quickly get started, Poole includes everything you need for a basic Jekyll site. To that end, just download Poole and start up Jekyll.
-
-### 2b. Roll your own Jekyll site
-
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Poole and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `public/` for CSS, JS, etc.).
-
-### 3. Running locally
-
-To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/poole` (or whatever your Jekyll site's root directory is named):
-
-```bash
-$ jekyll serve
-```
-
-Open <http://localhost:4000> in your browser, and voilà.
-
-### 4. Serving it up
-
-If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
-
-1. Fork this repo and switch to the `gh-pages` branch.
-  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/poole`, use `http://username.github.io/poole/`. **Be sure to include the trailing slash.**
-3. Done! Head to your GitHub Pages URL or custom domain.
-
-No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
-
-## Options
-
-Poole includes some customizable options, typically applied via classes on the `<body>` element.
+## Extra Learning Time
+I will hold ELT in Room 300 from 2:15-4:30 Wednesday, Thursday, and Friday. I expect that you attend at least one day a week, and it will count as a homework grade. You may choose your day during the first week of the semester. If you miss a day, you can make it up within the week- for example, you normally attend Wednesday but cannot make it, you may come either Thursday or Friday without penalty. Otherwise I require a note or phone call from a parent.
+This class is designed to prepare you for college-level Computer Science, which requires building the habit of working outside of normal class time.
 
 
-### Rems, `font-size`, and scaling
-
-Poole is built almost entirely with `rem`s (instead of pixels). `rem`s are like `em`s, but instead of building on the immediate parent's `font-size`, they build on the root element, `<html>`.
-
-By default, we use the following:
-
-```css
-html {
-  font-size: 16px;
-  line-height: 1.5;
-}
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
-}
-
-```
-
-To easily scale your site's typography and components, simply customize the base `font-size`s here.
+## Behavior
+This is a high school class, so I will keep it short. I expect the same core values that define MS/HS 223:
+1. Compassion:  Treat your peers how you would like to be treated.
+2. Scholarship: Being a student is your job. All distractions (food, phones) should be kept out.
+3. Relentlessness: Be prepared. Work hard. Fall down seven times, get up eight.
+4. Teamwork: Be ready to be an active, critical, and creative member of our class.
+5. Reflection: Make new mistakes
 
 
-## Development
-
-Poole has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
+## Tests & Quizzes
+Tests will be given at the end of each unit to assess your knowledge of the material.
+Students can expect to have frequent open-notebook quizzes. Students who are absent must bring in a note to excuse their absence in order to make up the test/quiz within a week of their return.
 
 
-## License
+## Raffle
+To help encourage your punctuality, TEALS has provided prizes for a weekly raffle. You can get a raffle ticket for getting to class early, and for participation.
+At the end of the year, we will have a grand prize: an Xbox One.
 
-Open sourced under the [MIT license](LICENSE.md).
 
-<3
+## Grades
+
+| Category | |
+|---|---|
+|  Major Assessments: 50%  | Major projects, Culture Day Presentations, End of Unit Assessments |
+|Minor Assessments: 40%|Classwork, quizzes, participation|
+|Homework: 10%|You will have homework that requires an internet connection. ELT is the perfect time to complete them.|
+
+## Classwork
+The vast majority of your work will be coding assignments, using Python. Those are to be submitted through Google Classroom. Your work will be graded by one of the three instructors for this course. Late work will automatically be deducted a point: a 4 becomes a 3, and so on.
+
+
+During lab days, you may use headphones if you are working independently, with my OK.
+
+## Guidelines for Collaboration
+* Looking at websites while you work is OK. I do this all the time.
+* Brainstorming with a friend is ENCOURAGED.
+* Having your friend teach you a new trick is GREAT.
+* You MUST write all your own code.
+* You CANNOT copy a classmate’s code.
+All content you create (text, images, etc.) must be school appropriate.
+All content you use must be your own work, and link to any sources (for images, music, etc.)
+
+
+## Topics
+This semester will be using Python, a powerful and popular programming language. Using Python, we will explore key topics in Computer Science including:
+* Algorithms
+* Loops
+* Variables
+* Functions
+* Lists
+* Dictionaries
+* Interactivity
+* Iteration
+
+
+## Supplies
+You must have:
+* A notebook no larger than a marble notebook. I recommend one smaller (and nicer looking).
+* A flash drive
+* Pen or pencil every day.
+
+If you ever need additional help, I am always here.
+
+
+SK
