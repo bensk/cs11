@@ -28,7 +28,7 @@ mystery_function(1, 2)
 
 On a more expansive note, <code>print</code> will not in any way affect a function. It is simply there for the human user's benefit. It is very useful for understanding how a program works and can be used in debugging to check various values in a program without interrupting the program.
 
-## <mark>Print is for people. Remember that slogan. Printing has no effect on the ongoing execution of a program. It doesn’t assign a value to a variable. It doesn’t return a value from a function.</mark>
+> ## Print is for people. Remember that slogan. Printing has no effect on the ongoing execution of a program. It doesn’t assign a value to a variable. It doesn’t return a value from a function.
 
 ---
 
