@@ -19,7 +19,7 @@ mystery_function(1, 2)
 
 1. What happens when your run this code? How do you know what the result was?
 2. Keeping the function the same, rewrite the code to print out the value that the function returns.
-
+---
 <code>print</code> just shows the human user a string representing what is going on inside the computer. The computer cannot make use of that printing. <code>return</code> is how a function gives back a value. This value is often unseen by the human user, but it can be used by the computer in further functions.
 
 On a more expansive note, <code>print</code> will not in any way affect a function. It is simply there for the human user's benefit. It is very useful for understanding how a program works and can be used in debugging to check various values in a program without interrupting the program.
