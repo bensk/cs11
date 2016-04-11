@@ -100,7 +100,7 @@ print g(h(2))
 
 Answer on [this Google form](https://docs.google.com/a/ms223.org/forms/d/1QsTK_Tlw1hIwoJenxGX5beEThv90lWFecT1_fJm_1s8/viewform#start=embed).
 
-## Independent Work
+<!-- ## Independent Work
 War!
 
 War (Card Game)
@@ -143,4 +143,4 @@ def shuffled_deck():
 ```
 
 ###Bonus!
-Instead of closing the program when the deck is empty, create a way for the user to play again.
+Instead of closing the program when the deck is empty, create a way for the user to play again. -->
