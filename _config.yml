@@ -30,3 +30,5 @@ github:
   repo:              https://github.com/bensk
 
 # wyyyyyy
+gems:
+    - jemoji
