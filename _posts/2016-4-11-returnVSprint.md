@@ -93,11 +93,11 @@ def h(y):
 print g(h(2))
 ```
 
-- [ ] a) 2
-- [ ] b) 5
-- [ ] c) 7
-- [ ] d) 10
-- [ ] e) Error: y has a value but x is an unbound variable insidethe square function
+a) 2
+b) 5
+c) 7
+d) 10
+e) Error: y has a value but x is an unbound variable inside the square function
 
 Answer on [this Google form](https://docs.google.com/a/ms223.org/forms/d/1QsTK_Tlw1hIwoJenxGX5beEThv90lWFecT1_fJm_1s8/viewform#start=embed).
 
