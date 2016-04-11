@@ -30,6 +30,8 @@ On a more expansive note, <code>print</code> will not in any way affect a functi
 
 ## Print is for people. Remember that slogan. Printing has no effect on the ongoing execution of a program. It doesn’t assign a value to a variable. It doesn’t return a value from a function.
 
+---
+
 ## Guided Practice
 ```python
 # what does this function return ?
