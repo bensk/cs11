@@ -63,3 +63,24 @@ print_only(7) + 6
 print "using return_only ..."
 return_only(7) + 6
 ```
+
+## Check your understanding
+```python
+def square(x):
+    return x*x
+
+def g(y):
+    return y + 3
+
+def h(y):
+    return square(y) + 3
+
+print h(2)
+```
+**What will the following code output?**
+
+- [ ] a) 2
+- [ ] b) 5
+- [ ] c) 7
+- [ ] d) 25
+- [ ] e) Error: y has a value but x is an unbound variable insidethe square function
