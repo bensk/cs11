@@ -1,6 +1,6 @@
 ---
 layout: post
-title: return vs. print
+title: <code>return</code> vs. print
 ---
 
 # April 11 – <code>return</code> vs. <code>print</code>
