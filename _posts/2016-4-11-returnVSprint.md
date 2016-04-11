@@ -1,9 +1,8 @@
 ---
 layout: post
-title: <code>return</code> vs. print
+title: <code>return</code> vs. <code>print</code>
 ---
 
-# April 11 – <code>return</code> vs. <code>print</code>
 
 ## 🎯 Do Now
 **Open up PyCharm. Paste the following code into the editor:**
