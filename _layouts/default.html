@@ -16,11 +16,11 @@
     padding:5px;
 }
       </style>
-      <div id="nav">
+      <div id="nav" style="font-size: 14px;">
       <!-- Added index, maybe -->
 
         {% for post in site.posts %}
-          <p class="lead">{{ post.date | date: '%B %d, %Y' }}
+          <p class="lead">{{ post.date | date: '%B %d, %Y' }}<br>
             <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
 
         {% endfor %}
