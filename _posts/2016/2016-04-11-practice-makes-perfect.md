@@ -17,7 +17,6 @@ date: "2016-04-11 23:16"
 
 ```python
 # For example
-For example:
 
 is_int(7.0)   # True
 is_int(7.5)   # False
