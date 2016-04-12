@@ -26,11 +26,12 @@
         {% endif %}
       {% endfor %}
 <!-- Post nav -->
-      {% for post in site.posts %}
-       -          <p class="lead">{{ post.date | date: '%B %d, %Y' }}		 +          <p class="lead">{{ post.date | date: '%B %d, %Y' }}<br>
-                    <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>		              <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+{% for post in site.posts %}
+    <p class="lead">{{ post.date | date: '%B %d, %Y' }}<br>
+      <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
 
-                {% endfor %}		          {% endfor %}
+  {% endfor %}
+</p>
 <!--  -->
       <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
