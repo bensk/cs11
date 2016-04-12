@@ -31,5 +31,3 @@ Write a function called <code>digit_sum</code> that takes a positive integer <co
 For example: <code>digit_sum(1234)</code> should return <code>10</code> which is <code>1 + 2 + 3 + 4</code>.
 
 (Assume that the number you are given will always be positive.)
-
-Check the hint if you need help!
