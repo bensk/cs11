@@ -3,7 +3,7 @@ layout: page
 title: Syllabus
 ---
 
-# Advanced Computer Science Syllabus
+# Advanced Computer Science
 
 
 Welcome to a new year of Computer Science. This class is based on the Introduction to Computer Science at the University of Berkeley, and is designed to prepare you to take college-level computer science, and expand your opportunities to explore fields in science, technology, engineering, and beyond. This year, we are partnering with TEALS (Technology Education and Literacy in Schools), which will bring engineers into the classroom as instructors, to give you a rigorous and real-world experience.
@@ -25,6 +25,7 @@ This class is designed to prepare you for college-level Computer Science, which 
 
 ## Behavior
 This is a high school class, so I will keep it short. I expect the same core values that define MS/HS 223:
+
 1. Compassion:  Treat your peers how you would like to be treated.
 2. Scholarship: Being a student is your job. All distractions (food, phones) should be kept out.
 3. Relentlessness: Be prepared. Work hard. Fall down seven times, get up eight.
@@ -62,12 +63,14 @@ During lab days, you may use headphones if you are working independently, with m
 * Having your friend teach you a new trick is GREAT.
 * You MUST write all your own code.
 * You CANNOT copy a classmate’s code.
+
 All content you create (text, images, etc.) must be school appropriate.
 All content you use must be your own work, and link to any sources (for images, music, etc.)
 
 
 ## Topics
 This semester will be using Python, a powerful and popular programming language. Using Python, we will explore key topics in Computer Science including:
+
 * Algorithms
 * Loops
 * Variables
@@ -80,6 +83,7 @@ This semester will be using Python, a powerful and popular programming language.
 
 ## Supplies
 You must have:
+
 * A notebook no larger than a marble notebook. I recommend one smaller (and nicer looking).
 * A flash drive
 * Pen or pencil every day.
