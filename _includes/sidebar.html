@@ -27,6 +27,7 @@
       {% endfor %}
 <!-- Post nav -->
 <hr />
+<h2>Lessons</h2>
 {% for post in site.posts %}
     <p class="lead">{{ post.date | date: '%B %d, %Y' }}<br>
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
