@@ -45,5 +45,3 @@ jekyll-archives:
     category: '/category/:name/'
 
 future: true
-
-markdown: redcarpet
