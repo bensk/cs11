@@ -4,6 +4,6 @@ title: "Testing Footnotes"
 date: "2016-01-01 09:05"
 ---
 
-This is a test [^test]
+This is a test [^fn-test]
 
-[^test]: this is a test!
+[^fn-test]: this is a test!
