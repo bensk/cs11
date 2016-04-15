@@ -45,7 +45,7 @@
         cleanFootnoteLinks($footnoteAnchors, footnoteLinks);
         $(footnoteLinks).each(function() {
           var $closestFootnoteEl, relatedFN;
-          relatedFN = $(this).data("footnote-ref").replace(/[:.]/g, "\\$&");
+          relatedFN = $(this).data("footnote-ref").replace(/[:.+~*\]\[]/g, "\\$&");
           if (settings.useFootnoteOnlyOnce) {
             relatedFN = "" + relatedFN + ":not(.footnote-processed)";
           }
