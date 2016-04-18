@@ -185,12 +185,24 @@ pre {
  */
 pre,
 code,
-kbd,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em;
 }
+
+kbd{
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+    padding: 2px 4px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
 
 /*
  * 1. Addresses CSS quotes not supported in IE6/7
@@ -320,7 +332,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
