@@ -4,9 +4,11 @@ title: "Practice Makes Perfect"
 date: "2016-04-18 23:16"
 ---
 
-## Do Now (In Google Classroom):
+## Do Now <small>(In Google Classroom)</small>
 
 In Python, what is the difference between return and print?
+
+---
 
 ## <code>is_even</code>
 
