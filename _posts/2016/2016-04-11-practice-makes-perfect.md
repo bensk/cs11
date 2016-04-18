@@ -4,6 +4,10 @@ title: "Practice Makes Perfect"
 date: "2016-04-18 23:16"
 ---
 
+## Do Now (In Google Classroom):
+
+In Python, what is the difference between return and print?
+
 ## <code>is_even</code>
 
 1. Define a function is_even that will take a number x as input.
