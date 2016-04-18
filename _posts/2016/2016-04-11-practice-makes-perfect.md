@@ -10,6 +10,8 @@ In Python, what is the difference between return and print?
 
 ---
 
+<kbd>In PyCharm, create a new file called <mark>practice_makes_perfect.py</mark></kbd>
+
 ## <code>is_even</code>
 
 1. Define a function is_even that will take a number x as input.
