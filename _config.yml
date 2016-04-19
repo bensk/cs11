@@ -34,7 +34,7 @@ github:
 gems:
     - jemoji
     - jekyll-archives
-    - octicon-rails
+
 
 jekyll-archives:
   enabled: []
