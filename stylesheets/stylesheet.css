@@ -238,8 +238,8 @@ kbd{
     _font-family: 'courier new', monospace;
     font-size: 1em;
     padding: 2px 4px;
-    color: #fff;
-    background-color: #333;
+    color: #fff !important;
+    background-color: #333 !important;
     border-radius: 3px;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
             box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
