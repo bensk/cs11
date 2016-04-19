@@ -74,14 +74,14 @@ def display_status():
 	global CURRENT_DAY
 	global CURRENT_MONTH
 
-	print("Current Health: " + str(PLAYER_HEALTH))
-	print("Food: " + str(PLAYER_FOOD_POUNDS) + "lbs")
-	print("Distance Traveled: " + str(2000-MILES_TO_GO) + "miles")
-	print("Day is: " + str(CURRENT_MONTH) + "/" + str(CURRENT_DAY))
+	print "Current Health: " + str(PLAYER_HEALTH)
+	print "Food: " + str(PLAYER_FOOD_POUNDS) + "lbs"
+	print "Distance Traveled: " + str(2000-MILES_TO_GO) + "miles"
+	print "Day is: " + str(CURRENT_MONTH) + "/" + str(CURRENT_DAY)
 
 # displays commands
 def display_help():
-	print("Commands are travel, rest, hunt, status, help, and quit")
+	print "Commands are travel, rest, hunt, status, help, and quit"
 
 # ends game before next turn
 def quit_game():
@@ -100,16 +100,16 @@ def is_game_over():
 	if GAME_OVER:
 		return True
 	if CURRENT_DAY == 31 and CURRENT_MONTH == 12:
-		print("It is Dec. 31st and you are not in Oregon.")
+		print "It is Dec. 31st and you are not in Oregon."
 		return True
 	if PLAYER_HEALTH < 1:
-		print("You're health detiorated, and you died :(")
+		print "You're health detiorated, and you died :("
 		return True
 	if PLAYER_FOOD_POUNDS < 1:
-		print("You ran out of food and starved")
+		print "You ran out of food and starved"
 		return True
 	if MILES_TO_GO < 1:
-		print("You MADE IT")
+		print "You MADE IT"
 		return True
 	return False
 
@@ -128,11 +128,12 @@ def process_user_input(user_input):
 	elif user_input == "quit":
 		quit_game()
 	else:
-		print("Not Correct Input.")
+		print "Not Correct Input."
 
 def game_loop():
+	print 'Welcome to the trail. Would you like to travel, rest, hunt, status, help, or quit?'
 	while not is_game_over():
-		user_input = input("What is your choice? ")
+		user_input = raw_input("What is your choice? ")
 		process_user_input(user_input)
 
 
