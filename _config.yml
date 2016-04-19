@@ -18,6 +18,7 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
+
 # About/contact
 author:
   name:              Ben Samuels-Kalow
