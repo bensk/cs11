@@ -31,7 +31,6 @@ print("No longer single Fruit: " + str(fruit_list))
 Running the code:
 
 ```python
->>> python3 fruit_pluralizer_lab.py
 Single Fruit: ['apple', 'berry', 'melon']
 No longer single Fruit: ['apples', 'berries', 'melons']
 
