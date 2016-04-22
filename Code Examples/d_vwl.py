@@ -3,11 +3,13 @@ def de_vowel(a_string):
     strng = []
     vowels = ['a','e','i','o','u']
     for n in a_string:
-
-        if n != 'a' and n != 'e' and n != 'i' and n != 'o' and n != 'u':
+        # if n != 'a' and n != 'e' and n != 'i' and n != 'o' and n != 'u':
+        if n not in vowels: # more elegant with a list
             strng.append(n)
     return ''.join(strng)
-print de_vowel(raw_input("Give me a sentence"))
+
+while user_input !=exit:
+    user_input = "give me a sentence"
+    print de_vowel(user_input)
 
 # examples go here
-
