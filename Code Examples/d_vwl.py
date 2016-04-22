@@ -8,7 +8,7 @@ def de_vowel(a_string):
             strng.append(n)
     return ''.join(strng)
 
-while user_input !=exit:
+while user_input !=exit: # while loop test
     user_input = "give me a sentence"
     print de_vowel(user_input)
 
