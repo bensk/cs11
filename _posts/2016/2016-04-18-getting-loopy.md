@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Getting Loopy"
-date: "2016-04-19 23:36"
+date: "2016-04-22 23:36"
 ---
 
 `In PyCharm, create a file called <mark>getting_loopy</mark>`
