@@ -4,7 +4,8 @@ title: "Getting Loopy"
 date: "2016-04-22 23:36"
 ---
 
-<span class="octicon-mega octicon-file-code"></span><kbd>In PyCharm, create a file called <mark>getting_loopy</mark></kbd>
+<span class="mega-octicon octicon-file-code"></span>
+<kbd>In PyCharm, create a file called <mark>getting_loopy</mark></kbd>
 
 
 ## Part 1
