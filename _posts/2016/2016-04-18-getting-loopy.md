@@ -6,7 +6,6 @@ date: "2016-04-22 23:36"
 
 `In PyCharm, create a file called <mark>getting_loopy</mark>`
 
-<span class="octicon octicon-flame"></span>
 
 ## Part 1
 Write a function `fruit_pluralizer`. It will take in a list of fruit and return nothing. The function should update the values of the list so that the values are plural. If the fruit name ends in a 'y' remove the 'y' and add 'ies', otherwise add an 's'.
