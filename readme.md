@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Syllabus
+title: <span class="octicon octicon-repo"></span> Syllabus
 ---
 
 # Advanced Computer Science
