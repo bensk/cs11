@@ -4,7 +4,7 @@ def de_vowel(a_string):
 	vowels = ['a','e','i','o','u']
 	for n in a_string:
         # if n != 'a' and n != 'e' and n != 'i' and n != 'o' and n != 'u':
-		if n not in vowels: # more elegant with a list
+		if n.lower() not in vowels: # more elegant with a list
 			strng.append(n)
 	return ''.join(strng)
 
@@ -15,3 +15,4 @@ while user_input != 'EXIT': # while loop test
 	user_input = raw_input("give me a sentence \n")
 
 # examples go here
+# forgot to add .lower(), so it passed all capital vowels
