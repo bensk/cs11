@@ -25,7 +25,7 @@ mystery_function(1, 2)
 1. What happens when your run this code? How do you know what the result was?
 2. Keeping the function the same, rewrite the code to print out the value that the function returns.
 
-#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>April11_DoNow.py</kbd>
+#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>April11_DoNow.py</kbd> ⭐️
 
 
 
