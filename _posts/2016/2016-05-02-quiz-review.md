@@ -9,8 +9,12 @@ date: "2016-05-02 16:48"
 
 1. Write a function, `max_value`, that takes in an integer and prints the numbers from 1 to that number inclusively.
 
-2. Write a function, `compare_lists`, that given two lists of the same length , will compare each element of the lists and print out the higher value at each index.
+2. Write a function, `compare_lists`, that given two lists of numbers the same length, compares each element of the lists, and print out the higher value at each index.
 
+```python
+list1 = [3,5,1,201,5]
+list2 =
+```
 
 3.Write a function, `swapping_stars`, that will print out the following:
 
@@ -29,7 +33,7 @@ Write a function, `find_secret`, that takes in a list of lists and an item. Once
 
 Example:
 
-```
+```python
 list_of_lists = [['where', 'is', 'the'],
 ['very', 'secret', 'word'],
 ['i', 'can', 'find']
