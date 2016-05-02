@@ -67,11 +67,10 @@ print(reversed)
 Running the code:
 
 ```python
->>> python3 my_reverse_lab.py
 selppa
 ```
 
-### Hint
+### <span class="mega-octicon octicon-light-bulb"></span> Hints
 To get the last element:`(len(my_list) -1) -  0`
 
 To get the second to last element: `(len(my_list)-1 ) - 1`
