@@ -12,8 +12,11 @@ date: "2016-05-02 16:48"
 2. Write a function, `compare_lists`, that given two lists of numbers the same length, compares each element of the lists, and print out the higher value at each index.
 
 ```python
-list1 = [3,5,1,201,5]
-list2 =
+list1 = [4,5,15,11,23,42]
+list2 = [1,8,7,16,7,35]
+
+compare_lists(list1, list2)
+# 4 8 15 16 23 42 should print out
 ```
 
 3.Write a function, `swapping_stars`, that will print out the following:
