@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>CS11</title>
+ <link href="http://bsk.education/CS11/atom.xml" rel="self"/>
+ <link href="http://bsk.education/CS11/"/>
+ <updated>2016-05-02T13:50:44-04:00</updated>
+ <id>http://bsk.education/CS11</id>
+ <author>
+   <name>Ben Samuels-Kalow</name>
+   <email>bsk@ms224.org</email>
+ </author>
+
+ 
+ <entry>
+   <title>Getting Loopy</title>
+   <link href="http://bsk.education/CS11/2016/05/03/getting-loopy/"/>
+   <updated>2016-05-03T23:36:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/05/03/getting-loopy</id>
+   <content type="html">&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+&lt;kbd&gt;In PyCharm, create a file called &lt;mark&gt;getting_loopy&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;part-1&quot;&gt;Part 1&lt;/h2&gt;
+&lt;p&gt;Write a function &lt;code class=&quot;highlighter-rouge&quot;&gt;fruit_pluralizer&lt;/code&gt;. It will take in a list of fruit and return nothing. The function should update the values of the list so that the values are plural. If the fruit name ends in a ‘y’ remove the ‘y’ and add ‘ies’, otherwise add an ‘s’.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create the function contract for &lt;code class=&quot;highlighter-rouge&quot;&gt;fruit_pluralizer&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Provide a few examples that confirm &lt;code class=&quot;highlighter-rouge&quot;&gt;fruit_pluralizer&lt;/code&gt; works as expected:
+    &lt;ul&gt;
+      &lt;li&gt;Include examples with ‘berry’&lt;/li&gt;
+      &lt;li&gt;What if the list is empty?&lt;/li&gt;
+      &lt;li&gt;What if the fruit ends in ‘s’?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# contract goes here&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fruit_pluralizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_strings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;c&quot;&gt;# your code goes here&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fruit_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;berry&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;melon&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Single Fruit: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fruit_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fruit_pluralizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fruit_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;No longer single Fruit: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fruit_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# examples go here&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Running the code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Single&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Fruit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;berry&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;melon&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;No&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;longer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;single&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Fruit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;apples&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;berries&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;melons&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;hint&quot;&gt;Hint&lt;/h3&gt;
+&lt;p&gt;Remember that you can index into the string and get the length of a string. Use that to get the last letter of each word.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;part-2&quot;&gt;Part 2&lt;/h2&gt;
+&lt;p&gt;Create a function &lt;code class=&quot;highlighter-rouge&quot;&gt;my_reverse&lt;/code&gt;, which will return a reversed string.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create the function contract for &lt;code class=&quot;highlighter-rouge&quot;&gt;my_reverse&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Provide a few examples to confirm that &lt;code class=&quot;highlighter-rouge&quot;&gt;my_reverse&lt;/code&gt; works:
+    &lt;ul&gt;
+      &lt;li&gt;An empty string&lt;/li&gt;
+      &lt;li&gt;A string of even length&lt;/li&gt;
+      &lt;li&gt;A string of odd length greater than 1&lt;/li&gt;
+      &lt;li&gt;A string of length 1&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;example-1&quot;&gt;Example&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# contract goes here&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string_to_reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;c&quot;&gt;# your code goes here&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;apples&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;reversed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# examples go here&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Running the code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;selppa&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;span-classmega-octicon-octicon-light-bulbspan-hints&quot;&gt;&lt;span class=&quot;mega-octicon octicon-light-bulb&quot;&gt;&lt;/span&gt; Hints&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# To get the last element:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#To get the second to last element:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#To get the third to last element:&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;bonus&quot;&gt;Bonus!&lt;/h3&gt;
+&lt;p&gt;Create a function &lt;code class=&quot;highlighter-rouge&quot;&gt;reverse_strings_in_list&lt;/code&gt;. This function will input a list of strings you want to reverse. The function will reverse the strings in the list by calling the &lt;code class=&quot;highlighter-rouge&quot;&gt;my_reverse&lt;/code&gt; function in a loop.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Quiz & Review</title>
+   <link href="http://bsk.education/CS11/2016/05/02/quiz-review/"/>
+   <updated>2016-05-02T16:48:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/05/02/quiz-review</id>
+   <content type="html">&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+&lt;kbd&gt;In PyCharm, create a file called &lt;mark&gt;May 2 Quiz&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;1) Write a function, &lt;code class=&quot;highlighter-rouge&quot;&gt;max_value&lt;/code&gt;, that takes in an integer and prints the numbers from 1 to that number inclusively.&lt;/p&gt;
+
+&lt;p&gt;2) Write a function, &lt;code class=&quot;highlighter-rouge&quot;&gt;compare_lists&lt;/code&gt;, that given two lists of numbers the same length, compares each element of the lists, and print out the higher value at each index.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;compare_lists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 4 8 15 16 23 42 should print out&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3) Write a function, &lt;code class=&quot;highlighter-rouge&quot;&gt;swapping_stars&lt;/code&gt;, that will print out the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* - * - * -
+- * - * - *
+* - * - * -
+- * - * - *
+* - * - * -
+- * - * - *
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;extra-credit&quot;&gt;Extra Credit&lt;/h2&gt;
+
+&lt;p&gt;Write a function, &lt;code class=&quot;highlighter-rouge&quot;&gt;find_secret&lt;/code&gt;, that takes in a list of lists and an item. Once it finds the item it will print both indexes of where the item is.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;list_of_lists&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;where&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;is&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;the&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;very&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;secret&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;word&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;i&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;can&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;find&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;secret_item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;secret&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;find_secret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_lists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;secret_item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# will print:  1, 1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>d_vwl</title>
+   <link href="http://bsk.education/CS11/2016/04/22/d_vwl/"/>
+   <updated>2016-04-22T23:31:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/04/22/d_vwl</id>
+   <content type="html">&lt;h2 id=&quot;remove-the-vowels&quot;&gt;Remove the Vowels&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+&lt;kbd&gt;In PyCharm, create a file called &lt;mark&gt;de_vowel&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a function, &lt;code class=&quot;highlighter-rouge&quot;&gt;de_vowel&lt;/code&gt;, which will take a string as input and return a copy of that string with all the vowels removed. Otherwise, the string should be the same.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create the function contract for &lt;code class=&quot;highlighter-rouge&quot;&gt;de_vowel&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+A function contract explains what the function does. So, in this case, yours might look like:
+
+This function takes a string as an input and returns a copy of the string with the vowels removed.
+&quot;&quot;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Write &lt;code class=&quot;highlighter-rouge&quot;&gt;de_vowel&lt;/code&gt; using a for loop&lt;/li&gt;
+  &lt;li&gt;Provide a few examples that confirm de_vowel works as expected:
+    &lt;ul&gt;
+      &lt;li&gt;What if the string is all vowels (‘aeiou’)?&lt;/li&gt;
+      &lt;li&gt;What if there are no vowels (‘rdcls’)?&lt;/li&gt;
+      &lt;li&gt;What if there is a mix of vowels and non-vowels and spaces (‘this is silly’)?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;p&gt;Example of the file:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# explanation&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;c&quot;&gt;# your code goes here&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;no_vowels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;This sentence has no vowels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no_vowels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# examples go here&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Example output:&lt;/p&gt;
+
+&lt;iframe src=&quot;https://trinket.io/embed/python/5238cab7c2?outputOnly=true&amp;amp;runOption=run&amp;amp;start=result&quot; width=&quot;100%&quot; height=&quot;200&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;bonus&quot;&gt;Bonus!&lt;/h3&gt;
+&lt;p&gt;Use a counter (variable you define outside of a loop to keep track of a value inside a loop) to create a function &lt;code class=&quot;highlighter-rouge&quot;&gt;count_vowels&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;count_vowels&lt;/code&gt; takes in a string and returns an int representing the number of vowels in the string.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Scope</title>
+   <link href="http://bsk.education/CS11/2016/04/19/scope/"/>
+   <updated>2016-04-19T21:57:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/04/19/scope</id>
+   <content type="html">&lt;h2 id=&quot;do-now-in-notebook&quot;&gt;⏳ Do Now (in notebook)&lt;/h2&gt;
+
+&lt;p&gt;Rank the following from easiest to hardest:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Importing built-in functions&lt;/li&gt;
+  &lt;li&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;randint&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abstraction/creating functions&lt;/li&gt;
+  &lt;li&gt;Passing int/str/float/bool parameters into functions&lt;/li&gt;
+  &lt;li&gt;Calling a function&lt;/li&gt;
+  &lt;li&gt;List syntax&lt;/li&gt;
+  &lt;li&gt;Return vs print&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We will have a quiz next class covering all of the above topics. Is there any topic you would like to focus on and cover more of? &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Type the following into the terminal and run the program:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;b&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;d&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# input: a list of strings&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# output: None&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;list_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;z&#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;What happened? Try writing a similar program but passing in integers instead of a list. What happens?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;reading&quot;&gt;📖 Reading&lt;/h2&gt;
+
+&lt;h3 id=&quot;variables-and-parameters-are-local&quot;&gt;Variables and parameters are local&lt;/h3&gt;
+
+&lt;p&gt;When you create a variable inside a function, it is &lt;strong&gt;local&lt;/strong&gt;, which means that it only exists inside the function. For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;global_variable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;bob&#39;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;local_variable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;bob&#39;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;global_variable&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#what actually prints?&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local_variable&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;#what actually prints?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Another example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;together&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;part1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;part2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;part1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;part2&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This function takes two parameters &lt;sup&gt;(&lt;code class=&quot;highlighter-rouge&quot;&gt;part1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;part2&lt;/code&gt;)&lt;/sup&gt; , adds them, and prints the result twice. Here is an example that uses it:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;line1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Hello there, &#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;line2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;children.&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;together&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# What prints?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;When &lt;code class=&quot;highlighter-rouge&quot;&gt;together&lt;/code&gt; terminates, the variable cat (inside &lt;code class=&quot;highlighter-rouge&quot;&gt;together()&lt;/code&gt;) is destroyed. What happens if we try to print it?&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;NameError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;cat&#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defined&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Parameters are also local. For example, outside &lt;code class=&quot;highlighter-rouge&quot;&gt;together&lt;/code&gt;, there is no such thing as &lt;code class=&quot;highlighter-rouge&quot;&gt;part1&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;part2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;aliasing&quot;&gt;Aliasing&lt;/h3&gt;
+
+&lt;p&gt;If &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; refers to an object and you assign &lt;code class=&quot;highlighter-rouge&quot;&gt;b = a&lt;/code&gt;, then both variables refer to the same object:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;local-global-build-in-lbg&quot;&gt;Local, Global, Build-in &lt;code class=&quot;highlighter-rouge&quot;&gt;LBG&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Python understands names at three &lt;strong&gt;scopes&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;l&lt;/code&gt;ocal, then &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;lobal, then &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;uilt-in.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;lab&quot;&gt;🖥 Lab&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+&lt;kbd&gt;In PyCharm, create a new file called &lt;mark&gt;Scope_Lab.py&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;aliasing-1&quot;&gt;Aliasing&lt;/h3&gt;
+
+&lt;p&gt;Will updating b affect a? Explain why or why not?&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Predict what &lt;code class=&quot;highlighter-rouge&quot;&gt;my_list&lt;/code&gt; list will print out when this code is run. If you are not sure check the code by copying and running it.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# input: a list of ints&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# output: an int&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;update_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;yo&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;update_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_list&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;scope&quot;&gt;Scope&lt;/h3&gt;
+
+&lt;p&gt;Label each variable as global or local.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;var_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;kittens&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;var_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cookies&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# input: a string&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# output: a string&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_favorite_things&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;song_lyrics&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;rain drops on roses,&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;combined_song&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;song_lyrics&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_favorite_things&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;combined_song&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# input: a string&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# output: a string&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_function_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;full_lyrics&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;on &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item2&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;full_song&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;full_lyrics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;full_song&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_song&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_function_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Write down what (if anything) is wrong with the following code. If there was an issue write out how to fix it. If you are unsure copy and run the code and fix it.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;var_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;cat&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;var_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;dog&#39;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_out_my_favorite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;favorite_pet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;favorite_pet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;My favorite pet is the cat.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;favorite_pet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;My favorite pet is the dog.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;var_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;cat&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;print_out_my_favorite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Write a program that has a global variable, &lt;code class=&quot;highlighter-rouge&quot;&gt;my_num&lt;/code&gt;. Create three functions that update &lt;code class=&quot;highlighter-rouge&quot;&gt;my_num&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;add2&lt;/code&gt;: this function adds 2 to &lt;code class=&quot;highlighter-rouge&quot;&gt;my_num&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;multiply_num&lt;/code&gt;: this function takes in a parameter, &lt;code class=&quot;highlighter-rouge&quot;&gt;multiplier&lt;/code&gt;, and multiplies &lt;code class=&quot;highlighter-rouge&quot;&gt;my_num&lt;/code&gt; by that parameter&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;add2_and_multiply&lt;/code&gt;: this function takes in a parameter, &lt;code class=&quot;highlighter-rouge&quot;&gt;multiplier&lt;/code&gt;, and calls &lt;code class=&quot;highlighter-rouge&quot;&gt;add2&lt;/code&gt;, then calls &lt;code class=&quot;highlighter-rouge&quot;&gt;multiply_num&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Practice Makes Perfect</title>
+   <link href="http://bsk.education/CS11/2016/04/18/practice-makes-perfect/"/>
+   <updated>2016-04-18T23:16:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/04/18/practice-makes-perfect</id>
+   <content type="html">&lt;h2 id=&quot;do-now-smallin-google-classroomsmall&quot;&gt;Do Now &lt;small&gt;(In Google Classroom)&lt;/small&gt;&lt;/h2&gt;
+
+&lt;p&gt;In Python, what is the difference between return and print?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;kbd&gt;In PyCharm, create a new file called &lt;mark&gt;practice_makes_perfect.py&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;codeisevencode&quot;&gt;&lt;code&gt;is_even&lt;/code&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define a function is_even that will take a number x as input.&lt;/li&gt;
+  &lt;li&gt;If x is even, then return True.&lt;/li&gt;
+  &lt;li&gt;Otherwise, return False.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;codeisintcode&quot;&gt;&lt;code&gt;is_int&lt;/code&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define a function &lt;code&gt;is_int&lt;/code&gt; that takes a number &lt;code&gt;x&lt;/code&gt; as an input.&lt;/li&gt;
+  &lt;li&gt;Have it &lt;code&gt;return True&lt;/code&gt; if the number is an integer (as defined above) and &lt;code&gt;False&lt;/code&gt; otherwise.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# For example&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;is_int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;7.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# True&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;is_int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;7.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# False&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;is_int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# True&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;codedigitsumcode&quot;&gt;&lt;code&gt;digit_sum&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Write a function called &lt;code&gt;digit_sum&lt;/code&gt; that takes a positive integer &lt;code&gt;n&lt;/code&gt; as input and returns the sum of all that number’s digits.&lt;/p&gt;
+
+&lt;p&gt;For example: &lt;code&gt;digit_sum(1234)&lt;/code&gt; should return &lt;code&gt;10&lt;/code&gt; which is &lt;code&gt;1 + 2 + 3 + 4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;(Assume that the number you are given will always be positive.)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>War!</title>
+   <link href="http://bsk.education/CS11/2016/04/15/War/"/>
+   <updated>2016-04-15T00:00:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/04/15/War</id>
+   <content type="html">&lt;h2 id=&quot;war-card-game&quot;&gt;War (Card Game)&lt;/h2&gt;
+
+&lt;p&gt;1) Create a program that lets a user play the card game &lt;a href=&quot;https://en.wikipedia.org/wiki/War_(card_game)&quot;&gt;‘War’&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Your game should:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Start with a given shuffled deck variable (shuffle function comes from python’s random library, more details below)&lt;/li&gt;
+  &lt;li&gt;Ask for player1 and player2’s names.&lt;/li&gt;
+  &lt;li&gt;Have a function &lt;code class=&quot;highlighter-rouge&quot;&gt;player_turn&lt;/code&gt;, with the contract shown below:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#player_turn: takes in a player name, player_name, and draws/removes a card from the deck, prints &quot;user drew card x&quot;, and returns the value&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#input: player_name, string&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#output: string&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Have a function &lt;code class=&quot;highlighter-rouge&quot;&gt;compare_scores&lt;/code&gt; that takes in the two strings representing the cards drawn and compares the card values. Make sure to write the contract for &lt;code class=&quot;highlighter-rouge&quot;&gt;compare_scores&lt;/code&gt;!&lt;/li&gt;
+  &lt;li&gt;For simplicty Jacks will be represented as 11, Queens will be represented as 12, Kings will be represented as 13, and Aces will be represented as 14&lt;/li&gt;
+  &lt;li&gt;For simplicty the suit does not matter&lt;/li&gt;
+  &lt;li&gt;Include a while loop that keeps the game running until there are no cards in the deck.&lt;/li&gt;
+  &lt;li&gt;Keep track of the score.&lt;/li&gt;
+  &lt;li&gt;Declare the name of the winner and final score at the end of the game.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;deck-shuffling&quot;&gt;Deck Shuffling&lt;/h3&gt;
+
+&lt;p&gt;While seemingly simple– shuffling a deck is a somewhat complicated problem. Luckily, Python’s random library has a built in shuffle algorithm. Feel free to read the documentation, but we have provided a simple wrapper function that will return to you a shuffled deck of cards.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;random&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# shuffled_deck: will return a shuffled deck to the user&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#input:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#output: a list representing a shuffled deck&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;shuffled_deck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;basic_deck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shuffle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;basic_deck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;basic_deck&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;bonus&quot;&gt;Bonus!&lt;/h3&gt;
+
+&lt;p&gt;Instead of closing the program when the deck is empty, create a way for the user to play again.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title><code>return</code> vs. <code>print</code></title>
+   <link href="http://bsk.education/CS11/2016/04/11/returnVSprint/"/>
+   <updated>2016-04-11T00:00:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/04/11/returnVSprint</id>
+   <content type="html">&lt;h2 id=&quot;do-now&quot;&gt;🎯 Do Now&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Open up PyCharm. Paste the following code into the editor:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;random&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mystery_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;random_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# What&#39;s the range of randoms?&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# What&#39;s the probability that random_number is greater than 0?&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mystery_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;In comments:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What happens when your run this code? How do you know what the result was?&lt;/li&gt;
+  &lt;li&gt;Keeping the function the same, rewrite the code to print out the value that the function returns.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;span-classmega-octicon-octicon-mark-githubspan-upload-your-code-to-github-in-a-file-called-kbdapril11donowpykbd-&quot;&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub in a file called &lt;kbd&gt;April11_DoNow.py&lt;/kbd&gt; ⭐️&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;reading&quot;&gt;📖 Reading&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;print&lt;/code&gt; just shows the human user a string representing what is going on inside the computer. The computer cannot make use of that printing. &lt;code&gt;return&lt;/code&gt; is how a function gives back a value. This value is often unseen by the human user, but it can be used by the computer in further functions.&lt;/p&gt;
+
+&lt;p&gt;On a more expansive note, &lt;code&gt;print&lt;/code&gt; will not in any way affect a function. It is simply there for the human user’s benefit. It is very useful for understanding how a program works and can be used in debugging to check various values in a program without interrupting the program.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;print-is-for-people-remember-that-slogan-printing-has-no-effect-on-the-ongoing-execution-of-a-program-it-doesnt-assign-a-value-to-a-variable-it-doesnt-return-a-value-from-a-function&quot;&gt;Print is for people. Remember that slogan. Printing has no effect on the ongoing execution of a program. It doesn’t assign a value to a variable. It doesn’t return a value from a function.&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;guided-practice&quot;&gt;🐍 Guided Practice&lt;/h2&gt;
+
+&lt;h4 id=&quot;make-a-new-file-called-kbdapril11guidedpracticepykbd-&quot;&gt;⭐️ Make a new file called &lt;kbd&gt;April11_GuidedPractice.py&lt;/kbd&gt; ⭐️&lt;/h4&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# what does this function return ?&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# how is this one different ?&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;return_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# let&#39;s try to use our 2 functions&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;running print_only ...&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;running return_only ...&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;return_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;printing print_only ...&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;printing return_only ...&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;return_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;using print_only ...&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;using return_only ...&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;return_only&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;check-your-understanding&quot;&gt;✅ Check your understanding&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;What will the following code output?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;2&lt;/li&gt;
+  &lt;li&gt;5&lt;/li&gt;
+  &lt;li&gt;7&lt;/li&gt;
+  &lt;li&gt;10&lt;/li&gt;
+  &lt;li&gt;Error: y has a value but x is an unbound variable inside the square function&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Answer on &lt;a href=&quot;https://docs.google.com/a/ms223.org/forms/d/1QsTK_Tlw1hIwoJenxGX5beEThv90lWFecT1_fJm_1s8/viewform#start=embed&quot;&gt;this Google form&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- ## Independent Work
+War!
+
+War (Card Game)
+
+1) Create a program that lets a user play the card game [&#39;War&#39;](http://www.pagat.com/war/war.html).
+
+Your game should:
+
+* Start with a given shuffled deck variable (shuffle function comes from python&#39;s random library, more details below)
+* Ask for player1 and player2&#39;s names.
+* Have a function `player_turn`, with the contract shown below:
+
+```python
+#player_turn: takes in a player name, player_name, and draws/removes a card from the deck, prints &quot;user drew card x&quot;, and returns the value
+#input: player_name, string
+#output: string
+```
+* Have a function `compare_scores` that takes in the two strings representing the cards drawn and compares the card values. Make sure to write the contract for `compare_scores`!
+* For simplicty Jacks will be represented as 11, Queens will be represented as 12, Kings will be represented as 13, and Aces will be represented as 14
+* For simplicty the suit does not matter
+* Include a while loop that keeps the game running until there are no cards in the deck.
+* Keep track of the score.
+* Declare the name of the winner and final score at the end of the game.
+
+### Deck Shuffling
+
+While seemingly simple-- shuffling a deck is a somewhat comoplicatd problem. Luckily, Python&#39;s random library has a built in shuffle algorithm. Feel free to read the documentation, but we have provided a simple wrapper function that will return to you a shuffled deck of cards.
+
+```python
+
+import random
+
+# shuffled_deck: will returna shuffled deck to the user
+#input:
+#output: a list representing a shuffled deck
+def shuffled_deck():
+	basic_deck = range(2, 15) * 4
+	random.shuffle(basic_deck)
+	return basic_deck
+```
+
+###Bonus!
+Instead of closing the program when the deck is empty, create a way for the user to play again. --&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rock || Paper || Scissors</title>
+   <link href="http://bsk.education/CS11/2016/04/07/rock-paper-scissors/"/>
+   <updated>2016-04-07T14:41:00-04:00</updated>
+   <id>http://bsk.education/CS11/2016/04/07/rock-paper-scissors</id>
+   <content type="html">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Play Rock || Paper || Scissors&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;turns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;best of...?&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;rock&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;paper&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;scissors&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;random&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Let&#39;s play a game of rock paper scissors&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# user_gesture = raw_input(&quot;What&#39;s your move- rock, paper or scissors?&quot;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;user_gesture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What&#39;s your move- rock, paper or scissors?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# moved user_gesture to the top of the four loop&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_gesture&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;rock&#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;scissors&#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_gesture&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;paper&#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;rock&#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_gesture&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;scissors&#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;paper&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Computer plays &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;You win!&quot;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# user_gesture = raw_input(&quot;What&#39;s your move- rock, paper or scissors?&quot;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_gesture&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Computer plays &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;It&#39;s a tie!&quot;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# user_gesture = raw_input(&quot;What&#39;s your move- rock, paper or scissors?&quot;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Computer plays &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;computer_gesture&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;You loose!&quot;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# user_gesture = raw_input(&quot;What&#39;s your move- rock, paper or scissors?&quot;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Your score is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; out of &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;turns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Debugging</title>
+   <link href="http://bsk.education/CS11/2016/02/23/debugging/"/>
+   <updated>2016-02-23T07:33:00-05:00</updated>
+   <id>http://bsk.education/CS11/2016/02/23/debugging</id>
+   <content type="html">&lt;h2 id=&quot;ruh-roh-broken-code-smallthanks-aileensmall&quot;&gt;Ruh roh broken code &lt;small&gt;(Thanks, Aileen!)&lt;/small&gt;&lt;/h2&gt;
+
+&lt;p class=&quot;lead&quot;&gt;Read the error messages. Try to fix the bugs, and include a comment for what you changed, and &lt;mark&gt;why&lt;/mark&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Hint: Try reading reading the error messages. They&#39;ll point you to a specific line number. Look one line up or down, seeing if you spot anything off. &lt;/code&gt;&lt;/p&gt;
+
+&lt;p class=&quot;lead&quot;&gt;If you finish that, go read my comments on your Quiz_App and resume working.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://trinket.io/embed/python/292d8aeef3&quot; width=&quot;100%&quot; height=&quot;480&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Quiz App</title>
+   <link href="http://bsk.education/CS11/2016/02/12/quiz-app/"/>
+   <updated>2016-02-12T07:35:00-05:00</updated>
+   <id>http://bsk.education/CS11/2016/02/12/quiz-app</id>
+   <content type="html">&lt;!-- 
+&lt;div class=&quot;page-header&quot;&gt;
+			&lt;h1&gt;
+				&lt;code&gt;Quiz_App&lt;/code&gt;
+				&lt;small&gt;Now go make your own...&lt;/small&gt;
+			&lt;/h1&gt;
+		&lt;/div&gt; --&gt;
+
+&lt;iframe src=&quot;https://trinket.io/embed/python/1d7b69d9d7?start=result&amp;amp;toggleCode=true&quot; width=&quot;100%&quot; height=&quot;200&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;quiz-app&quot;&gt;Quiz App&lt;/h3&gt;
+
+&lt;p&gt;Create your own quiz with&lt;/p&gt;
+
+&lt;p class=&quot;lead&quot;&gt;
+			&lt;input type=&quot;checkbox&quot; value=&quot;&quot; /&gt; 10 or more questions.&lt;/p&gt;
+&lt;p class=&quot;lead&quot;&gt;
+			&lt;input type=&quot;checkbox&quot; value=&quot;&quot; /&gt; If you have the user enter non-numeric answers, think and cover thdifferent ways a user could enter a correct answer.
+	&lt;p&gt;
+				&lt;em&gt;For example, if the answer is &amp;ldquo;a&amp;rdquo;would &amp;ldquo;A&amp;rdquo; also be acceptable? &lt;/em&gt;
+	&lt;/p&gt;
+&lt;/p&gt;
+&lt;p class=&quot;lead&quot;&gt;
+			&lt;input type=&quot;checkbox&quot; value=&quot;&quot; /&gt; Let the user know if she gets the question correct. Print a messagdepending on the user&#39;s answer.&amp;lt;/p
+	&lt;h4&gt;Extension: For a 4...&lt;/h4&gt;
+	&lt;p class=&quot;lead&quot;&gt;
+				&lt;input type=&quot;checkbox&quot; value=&quot;&quot; /&gt; Figure out how to add up correct answers and tell the user hescore.
+	&lt;/p&gt;
+&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Find Average</title>
+   <link href="http://bsk.education/CS11/2016/02/09/find-average/"/>
+   <updated>2016-02-09T09:04:00-05:00</updated>
+   <id>http://bsk.education/CS11/2016/02/09/find-average</id>
+   <content type="html">&lt;p&gt;In this assignment, you’re going to create an app to calculate your GPA. The code will look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# variable = input(&quot;question?&quot;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What&#39;s your grade in math?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# What happens if you try this?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[ ] How many inputs do you need?&lt;/li&gt;
+  &lt;li&gt;[ ] What kind of data do you get back from an input?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Try this to find out a type of data:&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;What&#39;s your grade in math?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+
+</feed>

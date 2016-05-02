@@ -34,6 +34,7 @@ github:
 gems:
     - jemoji
     - jekyll-archives
+    - jekyll-paginate
 
 
 jekyll-archives:

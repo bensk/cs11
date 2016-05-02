@@ -71,12 +71,15 @@ selppa
 ```
 
 ### <span class="mega-octicon octicon-light-bulb"></span> Hints
-To get the last element:`(len(my_list) -1) -  0`
 
-To get the second to last element: `(len(my_list)-1 ) - 1`
-
-To get the third to last element: `(len(my_list)-1) - 2`
-
+```python
+# To get the last element:
+(len(my_list) -1) -  0
+#To get the second to last element:
+(len(my_list)-1 ) - 1
+#To get the third to last element:
+(len(my_list)-1) - 2
+```
 
 ### Bonus!
 Create a function `reverse_strings_in_list`. This function will input a list of strings you want to reverse. The function will reverse the strings in the list by calling the `my_reverse` function in a loop.
