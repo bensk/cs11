@@ -13,7 +13,7 @@ def fruit_pluralizer(list_of_fruit):
     for fruits in list_of_fruit:
         fruits = fruits[0:len(fruits)-1] + "ies"
         print fruits
-        
+
 
 
 fruit_pluralizer(['beyrry'])

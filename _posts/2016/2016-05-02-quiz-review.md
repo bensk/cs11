@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Quiz & Review"
+title: "<strike>Quiz &</strike> Review"
 date: "2016-05-02 16:48"
 ---
 
