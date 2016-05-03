@@ -199,28 +199,21 @@
 </ol>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">de_vowel</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-<span class="s">"""
-A function contract explains what the function does. So, in this case, yours might look like:
 
-This function takes a string as an input and returns a copy of the string with the vowels removed.
-"""</span>
-</code></pre>
-</div>
+<span class="c"># A function contract explains what the function does. So, in this case, yours might look like:</span>
 
-<ol>
-  <li>Write <code class="highlighter-rouge">de_vowel</code> using a for loop</li>
-  <li>Provide a few examples that confirm de_vowel works as expected:
-    <ul>
-      <li>What if the string is all vowels (‘aeiou’)?</li>
-      <li>What if there are no vowels (‘rdcls’)?</li>
-      <li>What if there is a mix of vowels and non-vowels and spaces (‘this is silly’)?</li>
-    </ul>
-  </li>
-</ol>
+<span class="c">#This function takes a string as an input and returns a copy of the string with the vowels removed.</span>
 
-<h3 id="example">Example</h3>
+<span class="mf">2.</span> <span class="n">Write</span> <span class="sb">`de_vowel`</span> <span class="n">using</span> <span class="n">a</span> <span class="k">for</span> <span class="n">loop</span>
+<span class="mf">3.</span> <span class="n">Provide</span> <span class="n">a</span> <span class="n">few</span> <span class="n">examples</span> <span class="n">that</span> <span class="n">confirm</span> <span class="n">de_vowel</span> <span class="n">works</span> <span class="k">as</span> <span class="n">expected</span><span class="p">:</span>
+	<span class="o">*</span> <span class="n">What</span> <span class="k">if</span> <span class="n">the</span> <span class="n">string</span> <span class="ow">is</span> <span class="nb">all</span> <span class="n">vowels</span> <span class="p">(</span><span class="s">'aeiou'</span><span class="p">)</span><span class="err">?</span>
+	<span class="o">*</span> <span class="n">What</span> <span class="k">if</span> <span class="n">there</span> <span class="n">are</span> <span class="n">no</span> <span class="n">vowels</span> <span class="p">(</span><span class="s">'rdcls'</span><span class="p">)</span><span class="err">?</span>
+	<span class="o">*</span> <span class="n">What</span> <span class="k">if</span> <span class="n">there</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">mix</span> <span class="n">of</span> <span class="n">vowels</span> <span class="ow">and</span> <span class="n">non</span><span class="o">-</span><span class="n">vowels</span> <span class="ow">and</span> <span class="n">spaces</span> <span class="p">(</span><span class="s">'this is silly'</span><span class="p">)</span><span class="err">?</span>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># explanation</span>
+<span class="c">### Example</span>
+
+<span class="sb">``</span><span class="err">`</span><span class="n">python</span>
+<span class="c"># explanation</span>
 <span class="k">def</span> <span class="nf">de_vowel</span><span class="p">(</span><span class="n">a_string</span><span class="p">):</span>
 	<span class="c"># your code goes here</span>
 <span class="n">no_vowels</span> <span class="o">=</span> <span class="n">de_vowel</span><span class="p">(</span><span class="s">"This sentence has no vowels"</span><span class="p">)</span>

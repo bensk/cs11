@@ -4,7 +4,7 @@
  <title>CS11</title>
  <link href="http://bsk.education/CS11/atom.xml" rel="self"/>
  <link href="http://bsk.education/CS11/"/>
- <updated>2016-05-02T20:16:20-04:00</updated>
+ <updated>2016-05-02T22:45:07-04:00</updated>
  <id>http://bsk.education/CS11</id>
  <author>
    <name>Ben Samuels-Kalow</name>
@@ -154,7 +154,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-mark-github&quot;&gt;&lt;/span&gt; Upload your code to GitHub! Then return to &lt;a href=&quot;/2016/04/22/d_vwl/&quot;&gt;d_vwl&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -175,28 +175,21 @@
 &lt;/ol&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-A function contract explains what the function does. So, in this case, yours might look like:
 
-This function takes a string as an input and returns a copy of the string with the vowels removed.
-&quot;&quot;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# A function contract explains what the function does. So, in this case, yours might look like:&lt;/span&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Write &lt;code class=&quot;highlighter-rouge&quot;&gt;de_vowel&lt;/code&gt; using a for loop&lt;/li&gt;
-  &lt;li&gt;Provide a few examples that confirm de_vowel works as expected:
-    &lt;ul&gt;
-      &lt;li&gt;What if the string is all vowels (‘aeiou’)?&lt;/li&gt;
-      &lt;li&gt;What if there are no vowels (‘rdcls’)?&lt;/li&gt;
-      &lt;li&gt;What if there is a mix of vowels and non-vowels and spaces (‘this is silly’)?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;span class=&quot;c&quot;&gt;#This function takes a string as an input and returns a copy of the string with the vowels removed.&lt;/span&gt;
 
-&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;span class=&quot;mf&quot;&gt;2.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Write&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`de_vowel`&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Provide&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;few&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;examples&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confirm&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;de_vowel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;works&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expected&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;What&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;aeiou&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;What&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;there&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;rdcls&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;What&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;there&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mix&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;non&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vowels&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spaces&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;this is silly&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# explanation&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;### Example&lt;/span&gt;
+
+&lt;span class=&quot;sb&quot;&gt;``&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# explanation&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
 	&lt;span class=&quot;c&quot;&gt;# your code goes here&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;no_vowels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;This sentence has no vowels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
