@@ -66,9 +66,7 @@ print(reversed)
 
 Running the code:
 
-```python
-selppa
-```
+`selppa`
 
 ### <span class="mega-octicon octicon-light-bulb"></span> Hints
 
