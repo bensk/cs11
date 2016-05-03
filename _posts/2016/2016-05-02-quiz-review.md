@@ -45,4 +45,4 @@ secret_item = 'secret'
 find_secret(list_of_lists, secret_item) # will print:  1, 1
 ```
 
-<span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub! Then return to [d_vwl]({% post_url {{ site.baseurl }}/2016-04-19-d_vwl %})
+<span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub! Then return to `d_vwl`.
