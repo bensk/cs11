@@ -9,9 +9,11 @@ Write a function `fruit_pluralizer`. It will take in a list of fruit and return 
 """
 
 def fruit_pluralizer(list_of_fruit):
+    newFruits = []
     for fruits in list_of_fruit:
-        print fruits.index(len(fruits))
+        fruits = fruits[0:len(fruits)-1] + "ies"
+        print fruits
+        
 
 
-
-fruit_pluralizer(['berry'])
+fruit_pluralizer(['beyrry'])
