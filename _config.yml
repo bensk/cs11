@@ -32,7 +32,7 @@ github:
 
 # wyyyyyy
 gems:
-    - jemoji
+    # - jemoji
     - jekyll-archives
     - jekyll-paginate
 

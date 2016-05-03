@@ -4,7 +4,7 @@
  <title>CS11</title>
  <link href="http://bsk.education/CS11/atom.xml" rel="self"/>
  <link href="http://bsk.education/CS11/"/>
- <updated>2016-05-02T13:58:18-04:00</updated>
+ <updated>2016-05-02T20:16:20-04:00</updated>
  <id>http://bsk.education/CS11</id>
  <author>
    <name>Ben Samuels-Kalow</name>
@@ -195,8 +195,6 @@ This function takes a string as an input and returns a copy of the string with t
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
-
-&lt;p&gt;Example of the file:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# explanation&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;de_vowel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
