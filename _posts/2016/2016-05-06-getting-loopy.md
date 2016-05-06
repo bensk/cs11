@@ -5,26 +5,29 @@ date: "2016-05-06 23:36"
 ---
 
 ## Do Now
+
+<span class="mega-octicon octicon-file-code"></span>
+In PyCharm, create a file called `May 6 Do Now_String Slicing`
+
 ```python
 # Run the code below, and write a comment explaining what it does:
 print "hello"[1:]
 print "hello"[:4]
 print "hello"[2:4]
 ```
-Using string– this "string"[a,b]  syntax – print
+Using string– this `"string"[a,b] ` syntax – print
 
 1. `"it"` from "GitHub"8
 2. `"burger"` from "Hamburger"
 3. `"on" ` from "dongle"
 4. `"nap"` from "Snapchat"
 
-In a comment: how does "string"[a,b] work?
-
+In a comment: `"string"[a,b]` is called "slicing" a string. Why do you think it's called that? 
 
 ---
 
 <span class="mega-octicon octicon-file-code"></span>
-<kbd>In PyCharm, create a file called <mark>getting_loopy</mark></kbd>
+In PyCharm, create a file called `getting_loopy`
 
 
 ## Part 1

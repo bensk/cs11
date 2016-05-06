@@ -4,7 +4,7 @@
  <title>CS11</title>
  <link href="http://bsk.education/CS11/atom.xml" rel="self"/>
  <link href="http://bsk.education/CS11/"/>
- <updated>2016-05-05T20:58:05-04:00</updated>
+ <updated>2016-05-05T21:04:09-04:00</updated>
  <id>http://bsk.education/CS11</id>
  <author>
    <name>Ben Samuels-Kalow</name>
@@ -18,13 +18,17 @@
    <updated>2016-05-06T23:36:00-04:00</updated>
    <id>http://bsk.education/CS11/2016/05/06/getting-loopy</id>
    <content type="html">&lt;h2 id=&quot;do-now&quot;&gt;Do Now&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
+In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;May 6 Do Now_String Slicing&lt;/code&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Run the code below, and write a comment explaining what it does:&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;Using string– this “string”[a,b]  syntax – print&lt;/p&gt;
+&lt;p&gt;Using string– this &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;string&quot;[a,b] &lt;/code&gt; syntax – print&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;it&quot;&lt;/code&gt; from “GitHub”8&lt;/li&gt;
@@ -33,12 +37,12 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;nap&quot;&lt;/code&gt; from “Snapchat”&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;In a comment: how does “string”[a,b] work?&lt;/p&gt;
+&lt;p&gt;In a comment: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;string&quot;[a,b]&lt;/code&gt; is called “slicing” a string. Why do you think it’s called that?&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;span class=&quot;mega-octicon octicon-file-code&quot;&gt;&lt;/span&gt;
-&lt;kbd&gt;In PyCharm, create a file called &lt;mark&gt;getting_loopy&lt;/mark&gt;&lt;/kbd&gt;&lt;/p&gt;
+In PyCharm, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;getting_loopy&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;part-1&quot;&gt;Part 1&lt;/h2&gt;
 &lt;p&gt;Write a function &lt;code class=&quot;highlighter-rouge&quot;&gt;fruit_pluralizer&lt;/code&gt;. It will take in a list of fruit and return nothing. The function should update the values of the list so that the values are plural. If the fruit name ends in a ‘y’ remove the ‘y’ and add ‘ies’, otherwise add an ‘s’.&lt;/p&gt;
