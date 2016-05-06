@@ -4,6 +4,25 @@ title: "Getting Loopy"
 date: "2016-05-06 23:36"
 ---
 
+## Do Now
+```python
+# Run the code below, and write a comment explaining what it does:
+print "hello"[1:]
+print "hello"[:4]
+print "hello"[2:4]
+```
+Using string– this "string"[a,b]  syntax – print
+
+1. `"it"` from "GitHub"8
+2. `"burger"` from "Hamburger"
+3. `"on" ` from "dongle"
+4. `"nap"` from "Snapchat"
+
+In a comment: how does "string"[a,b] work?
+
+
+---
+
 <span class="mega-octicon octicon-file-code"></span>
 <kbd>In PyCharm, create a file called <mark>getting_loopy</mark></kbd>
 
