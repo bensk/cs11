@@ -17,7 +17,7 @@ print "hello"[2:4]
 ```
 Using `"string"[a:b] ` syntax – print:
 
-1. `"it"` from "GitHub"8
+1. `"it"` from "GitHub"
 2. `"burger"` from "Hamburger"
 3. `"on" ` from "dongle"
 4. `"nap"` from "Snapchat"

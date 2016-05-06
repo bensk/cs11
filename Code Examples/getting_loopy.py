@@ -16,4 +16,4 @@ def fruit_pluralizer(list_of_fruit):
 
 
 
-fruit_pluralizer(['beyrry'])
+fruit_pluralizer(['berry'])
