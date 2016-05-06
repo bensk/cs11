@@ -15,14 +15,14 @@ print "hello"[1:]
 print "hello"[:4]
 print "hello"[2:4]
 ```
-Using `"string"[a,b] ` syntax – print:
+Using `"string"[a:b] ` syntax – print:
 
 1. `"it"` from "GitHub"8
 2. `"burger"` from "Hamburger"
 3. `"on" ` from "dongle"
 4. `"nap"` from "Snapchat"
 
-In a comment: `"string"[a,b]` is called "slicing" a string. Why do you think it's called that?
+In a comment: `"string"[a:b]` is called "slicing" a string. Why do you think it's called that?
 
 ---
 
