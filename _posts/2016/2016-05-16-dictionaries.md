@@ -78,4 +78,4 @@ user_profile = {
 }
 ```
 
-#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>Dictionaries</kbd> ⭐️
+#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>Dictionaries</kbd> 
