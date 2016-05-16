@@ -78,4 +78,6 @@ user_profile = {
 }
 ```
 
-#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>Dictionaries</kbd> 
+Make sure you can `print` and `return` the correct values for the corresponding key. 
+
+#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>Dictionaries</kbd>
