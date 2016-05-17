@@ -106,4 +106,4 @@ The program will first create a dictionary with the words as keys and the number
 
 Then it will prompt the user which word they are curious about. If the word was in the paragraph it will print the number of times it occurred.
 
-#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>Word Counter</kbd>
+#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called `Word Counter`
