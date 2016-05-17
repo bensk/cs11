@@ -4,7 +4,11 @@ title: "Dictionary Methods"
 date: "2016-05-17 18:39"
 ---
 
-## <span class="mega-octicon octicon-clock"></span> Do Now
+## <span class="mega-octicon octicon-clock"></span> Do Now (In Google Classroom)
+
+How are dictionaries similar to lists? How are they different?
+
+_When you've finished answering the Do Now, take a look at this code before we start the mini lesson._
 
 <span class="mega-octicon octicon-file-code"></span>
 In PyCharm, create a file called `May 17 Do Now_Dictionaries`
