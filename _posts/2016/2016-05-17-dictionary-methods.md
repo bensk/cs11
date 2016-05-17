@@ -4,7 +4,7 @@ title: "Dictionary Methods"
 date: "2016-05-17 18:39"
 ---
 
-## Do Now
+## <span class="mega-octicon octicon-clock"></span> Do Now
 
 <span class="mega-octicon octicon-file-code"></span>
 In PyCharm, create a file called `May 17 Do Now_Dictionaries`
@@ -65,12 +65,10 @@ my_dictionary.pop('foo', None) # and
 print my_dictionary.pop('foo')`?
 ```
 
-The second argument in `.pop(___,___)` is described as the **default value**. This is the value that will be returned if the first argument is **not** in the dictionary.
-
-
-
-## Mini-Lesson
+## <span class="mega-octicon octicon-mortar-board"></span> Mini-Lesson
 > If you're searching for a value in a dictionary and you use a for loop, you're doing it wrong. Stop, go back, and read the previous statement.
+
+The second argument in `.pop(___,___)` is described as the **default value**. This is the value that will be returned if the first argument is **not** in the dictionary.
 
 ```python
 dict['key'] = "update or add the value of a key"
@@ -78,10 +76,34 @@ dict.clear() # clear values of a dictionary
 del dict['Name'] # remove entry with key 'Name'
 del dict         # delete entire dictionary
 dict.pop(key[, default]) # removes the entry and returns the value
+```
 
-
-## Check Yourself
+## <span class="mega-octicon octicon-verified"></span> Check Yourself
 - How do we remove an item from a dictionary?
 - How do we add items to a dictionary?
 - How do we update items in a dictionary?
 - Why do we use `None`?
+
+## <span class="mega-octicon octicon-list-ordered"></span> Word Counter App
+
+In this lab we will implement a word frequency algorithm. It will tell you how many of each word you had in an essay.
+
+Make a variable for user input, something like
+
+```python
+text_input = raw_input("Paste your text here")
+```
+
+In order to turn this text into a list of lower case words we will use the `split("")`, ``replace()``, and `lower()` functions.
+
+
+For each word in the document, count the number of times it occurs.
+
+Consider the following phrase: 'Cats are cool. Baby cats are called kittens. Cats make great pets.'
+
+The word 'cats' appears 3 times. The word 'are' appears 2 times.
+The program will first create a dictionary with the words as keys and the number of times they occur as values.
+
+Then it will prompt the user which word they are curious about. If the word was in the paragraph it will print the number of times it occurred.
+
+#### <span class="mega-octicon octicon-mark-github"></span> Upload your code to GitHub in a file called <kbd>Word Counter</kbd>
