@@ -250,3 +250,13 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+::selection {
+  background: #00A6A3; /* WebKit/Blink Browsers */
+  color: white;
+
+}
+::-moz-selection {
+  background: #00A6A3; /* Gecko Browsers */
+  color: white;
+}
