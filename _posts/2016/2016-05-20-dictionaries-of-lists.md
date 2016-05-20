@@ -15,7 +15,7 @@ print list_dictionaries
 # What type of data is list_dictionaries?
 # What type of data are list_dictionaries keys?
 # What type of data are list_dictionaries values??
-# Update the value of 'is' to [1, 2, 3, 4, 5]
+# Update the value of 'am' to [1, 2, 3, 4, 5]
 ```
 
 ---
