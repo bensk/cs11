@@ -6,7 +6,7 @@ date: "2016-05-20 16:38"
 
 ## <span class="mega-octicon octicon-clock"></span> Do Now (answer in Google Classroom)
 
-```python
+<!-- ```python
 list_dictionaries = {
  'i': [1, 3, 4],
  'am': [1, 2, 3, 4]
@@ -16,6 +16,13 @@ print list_dictionaries
 # What type of data are list_dictionaries keys?
 # What type of data are list_dictionaries values??
 # Update the value of 'am' to [1, 2, 3, 4, 5]
+``` -->
+
+WITHOUT using PyCharm, predict what is printed by the code below:
+
+```python
+this_is_a_dictionary = {"cat":12, "dog":6, "elephant":23}
+print this_is_a_dictionary["dog"]
 ```
 
 ---
@@ -41,6 +48,7 @@ What if I know what to add the string `"6"` to the key `"groot"`? How do we add 
 ```python
 list_dictionaries['groot'].append("six")
 ```
+
 
 ---
 
