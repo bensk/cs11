@@ -59,18 +59,18 @@ We're going to create to-do list app.
 <span class="mega-octicon octicon-file-code"></span>
 In PyCharm, create a file called `ToDo`
 
-| Specification  | Points   |
-|---|:---:|
-|Empty dictionary to store information   |  1 |
-|Key for each day of the week   |  1 |
-|Each key has a list value that stores items   |  1 |
-|User is prompted  |  1 |
-|User can type `add` program will ask what day and add it correctly   |  1 |
-| User can type `get` and the program will ask for the day and print the values  |  1 |
-|**Extensions** | **Points** |
-|Use .split() to allow the user to type `get Friday` and see the values|1|
-|Use .split() to make `add Friday watch tv and relax` update the list| 1 |
-| **Total** | _ / 8 |
+| Specification                                                                 |   Points   |
+|:------------------------------------------------------------------------------|:----------:|
+| Empty dictionary to store information                                         |     1      |
+| Key for each day of the week                                                  |     1      |
+| Each key has a list value that stores items                                   |     1      |
+| User is prompted                                                              |     1      |
+| User can type `add` program will ask what day and add it correctly            |     1      |
+| User can type `get` and the program will ask for the day and print the values |     1      |
+| **Extensions**                                                                | **Points** |
+| Use .split() to allow the user to type `get Friday` and see the values        |     1      |
+| Use .split() to make `add Friday watch tv and relax` update the list          |     1      |
+| **Total**                                                                     |   _ / 8    |
 
 Example Output
 
