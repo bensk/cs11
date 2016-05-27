@@ -16,7 +16,8 @@ print my_pet.name
 ```
 
 1. What do you think `__init__ ` does?`?
-2. What if you wanted to initialize all pet objects with a name and a color? 3. How would you modify the code to create a pet object with a name of "Nymeria" and a color of "brown"?
+2. What if you wanted to initialize all pet objects with a name and a color?
+3. How would you modify the code to create a pet object with a name of "Nymeria" and a color of "brown"?
 
 ---
 
