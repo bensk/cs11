@@ -6,7 +6,7 @@ class Time(object):
     def __str__(self):
         return str(self.hour) + ":"+str(self.minute)+":"+str(self.second)
     def __add__(self, other):
-        return str(int(self.hour)+int(other.hour)) + ":" + str(int(self.minute)+int(other.minute)) + ":" + str(int(self.second)+int(other.second))
+        return Time(str(self.hour+other.hour) + ":" + str(self.minute+other.minute) + ":" + str(self.second+other.second)
 
 time1 = Time(5, 32, 0)
 time2 = Time(23, 11, 11)
