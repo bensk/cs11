@@ -1,0 +1,94 @@
+---
+layout: "post"
+title: "Methods"
+date: "2016-05-31 22:33"
+---
+
+## Do Now (in PyCharm)
+Run this code:
+
+```python
+class Time(object):
+ def __init__(self, hour, minute, second):
+     self.hour = hour
+     self.minute = minute
+     self.second = second
+
+time1 = Time(5, 32, 0)
+time2 = Time(23, 11, 11)
+
+print time1
+print time2
+```
+
+_What the heck?_
+
+**`# In comments...`**
+
+1. Looking at the output, how can you tell the difference between `time1` and `time2`?
+2. What can you add to print out the `hour`, `minute`, and `second` attributes of `time1`?
+3. What happens if you try to add `time1` and `time2`?
+
+---
+
+## Methods
+We can't (easily) add the two `Time` objects together, but it's time to fix that.
+
+**We** know that we **should** be able to add two times together, but we need to create a **method** in order for Python to be able to do that. We've already seen one **method**: `__init__`.
+
+In order to be able to read our `Time`s, we need to turn them into `str`ings.
+
+We can manually get each:
+
+```python
+print str(time1.hour) + ":" + str(time1.minute) + ":" + str(time1.minute)
+```
+
+Luckily, we can make the computer do that work for us, every time we use the `Time` class
+
+Just like we defined `__init__`, we can define a special function _inside_ of the `Time` class. A **function** inside of a **class** is called a **method**[^1].
+
+[^1]: Hey, that's the name of the lesson!
+
+---
+
+## Method to the Madness
+1. Define a `__str__` method. It should start like this:
+
+```python
+class Time(object):
+    def __init__(self, hour, minute, second):
+        self.hour = hour
+        self.minute = minute
+        self.second = second
+    def __str__(self):
+    # Notice that methods are indented INSIDE the class and BELOW the __init__ method.
+```
+This will get called when you print an object, and it should `return` a string that is easy to read and understand, like `5:32:0`.
+
+2. Next, define a `__add__` method.
+
+```python
+def __add__(self, somethingelse):
+# Watch your whitespace!
+```
+
+It will take in **two** parameters: `self` and some `other` `Time` object. Before you start coding, think about what data Python can and _cannot_ add together. How can we turn `Time` objects into data which can be added, and into data to which we can add `:` (semicolons!)
+
+---
+
+## Practice with Classes
+Go [here](https://www.codecademy.com/en/courses/python-intermediate-en-WL8e4/0/1?curriculum_id=4f89dab3d788890003000096), and get to lesson 18.
+
+---
+
+## Lab
+Write a definition for a class named `Kangaroo` with the following methods:
+
+1. An `__init__` method that initializes an attribute named `pouch_contents` to an empty list.
+2. A method named `put_in_pouch` that takes an object of any type and adds it to `pouch_contents`.
+3. A `__str__` method that returns a string representation of the Kangaroo object and the contents of the pouch.
+
+Test your code by creating two Kangaroo objects, assigning them to variables named `kanga` and `roo`, and then adding `roo` to the contents of `kanga`’s pouch.
+
+---
