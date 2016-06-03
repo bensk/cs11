@@ -8,11 +8,11 @@ title: Syllabus
 
 Welcome to a new year of Computer Science. This class is based on the Introduction to Computer Science at the University of Berkeley, and is designed to prepare you to take college-level computer science, and expand your opportunities to explore fields in science, technology, engineering, and beyond. This year, we are partnering with TEALS (Technology Education and Literacy in Schools), which will bring engineers into the classroom as instructors, to give you a rigorous and real-world experience.
 
-| Instructor | Email |
-|---|---|
-| Mr. S-K |[bsk@ms223.org](mailto:bsk@ms223.org)  |
-|	Mr. Fernandez  |	[afernandez@ms223.org](mailto:afernandez@ms223.org)   |
-|Mr. Bhattacharyya <small>(“Mr. B”)</small>|[ab@ms223.org](mailto:ab@ms223.org) |
+| Instructor                                 | Email                                               |
+|:-------------------------------------------|:----------------------------------------------------|
+| Mr. S-K                                    | [bsk@ms223.org](mailto:bsk@ms223.org)               |
+| Mr. Fernandez                              | [afernandez@ms223.org](mailto:afernandez@ms223.org) |
+| Mr. Bhattacharyya <small>(“Mr. B”)</small> | [ab@ms223.org](mailto:ab@ms223.org)                 |
 
 ## Attendance
 This class meets first period, Monday, Tuesday, and Friday. In order to keep up with concepts, content, and skills, students are expected to attend every class and be on time.
@@ -45,11 +45,11 @@ At the end of the year, we will have a grand prize: an Xbox One.
 
 ## Grades
 
-| Category | |
-|---|---|
-|  Major Assessments: 50%  | Major projects, Culture Day Presentations, End of Unit Assessments |
-|Minor Assessments: 40%|Classwork, quizzes, participation|
-|Homework: 10%|You will have homework that requires an internet connection. ELT is the perfect time to complete them.|
+| Category          | Examples                                                                                               | Weight |
+|:------------------|:-------------------------------------------------------------------------------------------------------|:------:|
+| Major Assessments | Major projects, Culture Day Presentations, End of Unit Assessments                                     |  50%   |
+| Minor Assessments | Classwork, quizzes, participation                                                                      |  40%   |
+| Homework          | You will have homework that requires an internet connection. ELT is the perfect time to complete them. |  10%   |
 
 ## Classwork
 The vast majority of your work will be coding assignments, using Python. Those are to be submitted through Google Classroom. Your work will be graded by one of the three instructors for this course. Late work will automatically be deducted a point: a 4 becomes a 3, and so on.
